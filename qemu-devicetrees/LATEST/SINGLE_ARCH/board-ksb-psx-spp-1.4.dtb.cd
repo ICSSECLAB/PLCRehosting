@@ -1,0 +1,30 @@
+LATEST/SINGLE_ARCH/board-ksb-psx-spp-1.4.dts.i: board-ksb-psx-spp-1.4.dts \
+  board-versal-net-psx-spp-1.4.dts board-versal-net-psx-virt.dts \
+  include/memmap/ksb/SSV_FC/ksb-npi-memmap.dtsh board-versal-ps-virt.dts \
+  versal.dtsh include/utils.dtsh include/loader.dtsh versal-irqs.dtsh \
+  versal-psx-irqs.dtsh include/ksb/ksb-versal-irq-aliases.dtsh \
+  versal-memmap.dtsh include/memmap/ksb/SSV_FC/ksb-memmap.dtsh \
+  include/memmap/ksb/SSV_FC/ksb-top-memmap.dtsh \
+  include/memmap/ksb/SSV_FC/ksb-fpd-memmap.dtsh \
+  include/memmap/ksb/SSV_FC/ksb-lpd-memmap.dtsh \
+  include/memmap/ksb/SSV_FC/ksb-pmx-memmap.dtsh \
+  include/memmap/ksb/SSV_FC/ksb-ocm-memmap.dtsh \
+  include/memmap/ksb/SSV_FC/ksb-iou-memmap.dtsh \
+  include/memmap/ksb/SSV_FC/ksb-psm-memmap.dtsh \
+  include/memmap/ksb/SSV_FC/ksb-coresight-memmap.dtsh \
+  include/memmap/ksb/SSV_FC/ksb-pki-memmap.dtsh \
+  include/memmap/ksb/SSV_FC/ksb-gic-memmap.dtsh \
+  versal-psx-memmap-aliases.dtsh versal-cpm-memmap.dtsh \
+  versal-resetmap.dtsh versal-powermap.dtsh versal-wiremap.dtsh \
+  versal-smid.dtsh versal-pmc.dtsi versal-icnt.dtsi include/smmuv2.dtsh \
+  include/interconnect.dtsh include/ksb/irq-map.dtsh \
+  versal-psx-irq-map.dtsh versal-rams.dtsi versal-pmc-ppu.dtsi \
+  versal-pmc-iou.dtsi versal-pmc-sys.dtsi versal-pmc-sec.dtsi \
+  versal-pmc-npi.dtsi versal-pmc-pl.dtsi versal-pmc-bat.dtsi \
+  versal-psm.dtsi versal-ddrmc.dtsi versal-psx-apu.dtsi \
+  include/versal/apu.dtsh versal-ps-iou.dtsi versal-virtio-mmio.dtsi \
+  versal-boot-init.dtsi versal-gty.dtsi versal-gty-npi.dtsi \
+  versal-silicon-freq.dtsi versal-psx.dtsi versal-net-psmx.dtsi \
+  versal-psx-rpu.dtsi include/versal/rpu.dtsh versal-net-boot-init.dtsi \
+  versal-net-hnic.dtsi versal-pmx-shared-overlay.dtsi \
+  versal-pmx-system-overlay.dtsi versal-psx-shared-overlay.dtsi

@@ -1,0 +1,1 @@
+arm-linux-gnueabihf-as -EB -o tmp.elf ISR_prologue.s && arm-linux-gnueabihf-objcopy -j .text -Obinary tmp.elf ISR_prologue.bin && rm tmp.elf

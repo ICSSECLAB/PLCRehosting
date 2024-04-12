@@ -1,0 +1,3277 @@
+Build started at 2024-03-22T13:52:01.143259
+Main binary: /Library/Developer/CommandLineTools/usr/bin/python3
+Build Options: -Ddocdir=/usr/local/share/doc -Dqemu_firmwarepath=/usr/local/share/qemu-firmware -Dqemu_suffix=qemu -Doptimization=2 -Ddebug=true -Dwerror=false -Dstrip=true -Db_pie=false -Db_staticpic=false -Db_coverage=false -Db_lto=false -Dcfi=false -Dcfi_debug=false -Dmalloc=system -Dmalloc_trim=auto -Dsparse=auto -Dkvm=disabled -Dhax=auto -Dwhpx=auto -Dhvf=auto -Dnvmm=auto -Dxen=disabled -Dxen_pci_passthrough=auto -Dtcg=enabled -Dcocoa=auto -Dgtk=auto -Dmpath=auto -Dsdl=auto -Dsdl_image=auto -Dlibusb=auto -Dsmartcard=auto -Dusb_redir=auto -Dvte=auto -Dvnc=auto -Dvnc_sasl=auto -Dvnc_jpeg=auto -Dvnc_png=auto -Dgettext=auto -Dxkbcommon=auto -Du2f=auto -Dvirtiofsd=auto -Dcapstone=auto -Dslirp=auto -Dfdt=enabled -Dbrlapi=auto -Dcurl=auto -Dglusterfs=auto -Dbzip2=auto -Dlibiscsi=auto -Dlibnfs=auto -Diconv=auto -Dcurses=auto -Dlibudev=auto -Drbd=auto -Dlzo=auto -Dsnappy=auto -Dlzfse=auto -Dlibxml2=auto -Dlibdaxctl=auto -Dlibpmem=auto -Dlinux_io_uring=auto -Dgnutls=auto -Dnettle=auto -Dgcrypt=enabled -Dauth_pam=auto -Dzstd=auto -Dseccomp=auto -Dvirtfs=auto -Dcap_ng=auto -Dattr=auto -Ddefault_devices=true -Dvirglrenderer=auto -Ddocs=auto -Dsphinx_build= -Dinstall_blobs=true -Dvhost_user_blk_server=auto -Dmultiprocess=auto -Dfuse=auto -Dfuse_lseek=auto -Dguest_agent_msi=auto -Dbpf=auto -Dtcg_interpreter=false -Dprefix=/usr/local -Dbindir=/usr/local/bin -Ddatadir=/usr/local/share -Dincludedir=/usr/local/include -Dlibdir=/usr/local/lib -Dlibexecdir=/usr/local/libexec -Dlocaledir=/usr/local/share/locale -Dlocalstatedir=/usr/local/var -Dmandir=/usr/local/share/man -Dsysconfdir=/usr/local/etc -Dbackend=ninja
+Python system: Darwin
+The Meson build system
+Version: 0.55.3
+Source dir: /Users/lihaoran/siemensSec/qemu
+Build dir: /Users/lihaoran/siemensSec/qemu/build
+Build type: native build
+Running command: /usr/bin/head /Users/lihaoran/siemensSec/qemu/VERSION
+--- stdout ---
+6.1.0
+
+--- stderr ---
+
+
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+None of 'PKG_CONFIG_PATH' are defined in the environment, not changing global flags.
+Project name: qemu
+Project version: 6.1.0
+C compiler for the build machine: cc (clang 15.0.0 "Apple clang version 15.0.0 (clang-1500.1.0.2.5)")
+C linker for the build machine: cc ld64 unknown version
+C compiler for the host machine: cc (clang 15.0.0 "Apple clang version 15.0.0 (clang-1500.1.0.2.5)")
+C linker for the host machine: cc ld64 unknown version
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+../meson.build:10: WARNING: Module unstable-keyval has no backwards or forwards compatibility and might not exist in future releases.
+Program sh found: YES
+Program python3 found: YES (/Library/Developer/CommandLineTools/usr/bin/python3)
+Program bzip2 found: YES
+C++ compiler for the host machine: c++ (clang 15.0.0 "Apple clang version 15.0.0 (clang-1500.1.0.2.5)")
+C++ linker for the host machine: c++ ld64 unknown version
+Objective-C compiler for the host machine: clang (clang 15.0.0)
+Objective-C linker for the host machine: clang ld64 unknown version
+Program cgcc found: NO
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp44j_rr9i
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp44j_rr9i/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp44j_rr9i/output.exe -pipe -O0 -lm -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library m found: YES
+Dependency threads found: YES unknown (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp6x_ar6mk
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp6x_ar6mk/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp6x_ar6mk/output.exe -pipe -O0 -lutil -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library util found: YES
+Dependency appleframeworks (modules: CoreFoundation) found: YES unknown (cached)
+Dependency appleframeworks (modules: IOKit) found: YES unknown (cached)
+Dependency appleframeworks (modules: Hypervisor) found: YES unknown (cached)
+Dependency pixman-1 found: YES 0.42.2 (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpfblcwp14
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpfblcwp14/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpfblcwp14/output.exe -pipe -O0 -laio -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ ld: library 'aio' not found
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmplujkkkqm
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmplujkkkqm/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmplujkkkqm/output.exe -pipe -O0 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(void *)));
+            return 0;
+        };
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Program stdout:
+
+8
+
+Program stderr:
+
+
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpwq2a1qt7
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpwq2a1qt7/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpwq2a1qt7/output.obj -pipe -c -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ programs: =/Library/Developer/CommandLineTools/usr/bin
+libraries: =/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0
+
+Compiler stderr:
+ 
+Library aio found: NO
+Dependency zlib found: YES 1.2.11 (cached)
+Pkg-config binary for MachineChoice.HOST is not cached.
+Pkg-config binary for MachineChoice.HOST specified from cross file, native file, or env var as ['pkg-config']
+Found pkg-config: /usr/local/bin/pkg-config (0.29.2)
+Determining dependency 'liburing' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion liburing` -> 1
+
+Run-time dependency liburing found: NO (tried pkgconfig)
+Dependency libxml-2.0 found: YES 2.9.4 (cached)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libnfs' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libnfs` -> 1
+
+Run-time dependency libnfs found: NO (tried pkgconfig)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmplentme88/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmplentme88/output.exe -pipe -O0 -std=gnu11 
+
+Code:
+ 
+  #include <stddef.h>
+  #include <sys/types.h>
+  #ifdef CONFIG_LIBATTR
+  #include <attr/xattr.h>
+  #else
+  #include <sys/xattr.h>
+  #endif
+  int main(void) { getxattr(NULL, NULL, NULL, 0); setxattr(NULL, NULL, NULL, 0, 0); return 0; }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmplentme88/testfile.c:9:48: error: too few arguments to function call, expected 6, have 4
+  int main(void) { getxattr(NULL, NULL, NULL, 0); setxattr(NULL, NULL, NULL, 0, 0); return 0; }
+                   ~~~~~~~~                    ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/xattr.h:61:9: note: 'getxattr' declared here
+ssize_t getxattr(const char *path, const char *name, void *value, size_t size, u_int32_t position, int options);
+        ^
+/Users/lihaoran/siemensSec/qemu/build/meson-private/tmplentme88/testfile.c:9:82: error: too few arguments to function call, expected 6, have 5
+  int main(void) { getxattr(NULL, NULL, NULL, 0); setxattr(NULL, NULL, NULL, 0, 0); return 0; }
+                                                  ~~~~~~~~                       ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/xattr.h:65:5: note: 'setxattr' declared here
+int setxattr(const char *path, const char *name, const void *value, size_t size, u_int32_t position, int options);
+    ^
+2 errors generated.
+
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp47luxyk5/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("attr/xattr.h")
+          #error "Header 'attr/xattr.h' could not be found"
+         #endif
+        #else
+         #include <attr/xattr.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp47luxyk5/testfile.c:4:12: error: "Header 'attr/xattr.h' could not be found"
+          #error "Header 'attr/xattr.h' could not be found"
+           ^
+1 error generated.
+
+Has header "attr/xattr.h" : NO (cached)
+Dependency appleframeworks (modules: Cocoa) found: YES unknown (cached)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libseccomp' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libseccomp` -> 1
+
+Run-time dependency libseccomp found: NO (tried pkgconfig)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpwg2qrq_e/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("cap-ng.h")
+          #error "Header 'cap-ng.h' could not be found"
+         #endif
+        #else
+         #include <cap-ng.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpwg2qrq_e/testfile.c:4:12: error: "Header 'cap-ng.h' could not be found"
+          #error "Header 'cap-ng.h' could not be found"
+           ^
+1 error generated.
+
+Has header "cap-ng.h" : NO (cached)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'xkbcommon' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion xkbcommon` -> 1
+
+Run-time dependency xkbcommon found: NO (tried pkgconfig)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmploxshux8
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmploxshux8/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmploxshux8/output.exe -pipe -O0 -lrt -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ ld: library 'rt' not found
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Library rt found: NO
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp10clnvjg
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp10clnvjg/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp10clnvjg/output.exe -pipe -O0 -ldl -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library dl found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpj98zqqoa/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpj98zqqoa/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports -ldl 
+
+Code:
+ 
+        #define dlopen meson_disable_define_of_dlopen
+        
+        #include <limits.h>
+        #undef dlopen
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dlopen (void);
+        
+        #if defined __stub_dlopen || defined __stub___dlopen
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return dlopen ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Checking for function "dlopen" with dependency -ldl: YES (cached)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libiscsi' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libiscsi` -> 1
+
+Run-time dependency libiscsi found: NO (tried pkgconfig)
+Dependency libzstd found: YES 1.5.5 (cached)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'virglrenderer' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion virglrenderer` -> 1
+
+Run-time dependency virglrenderer found: NO (tried pkgconfig)
+Dependency libcurl found: YES 7.79.1 (cached)
+Dependency ncursesw found: YES 5.7.20081102 (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpn0c0byku/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpn0c0byku/output.exe -pipe -O0 -std=gnu11 -DNCURSES_WIDECHAR -lncurses 
+
+Code:
+ 
+    #include <locale.h>
+    #include <curses.h>
+    #include <wchar.h>
+    int main(void) {
+      wchar_t wch = L'w';
+      setlocale(LC_ALL, "");
+      resize_term(0, 0);
+      addwstr(L"wide chars\n");
+      addnwstr(&wch, 1);
+      add_wch(WACS_DEGREE);
+      return 0;
+    }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc -I/usr/local/Cellar/glib/2.78.4/include -I/usr/local/Cellar/glib/2.78.4/include/glib-2.0 -I/usr/local/Cellar/glib/2.78.4/lib/glib-2.0/include -I/usr/local/opt/gettext/include -I/usr/local/Cellar/pcre2/10.42/include -L/usr/local/Cellar/glib/2.78.4/lib -L/usr/local/opt/gettext/lib /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpp_ghac1y/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpp_ghac1y/output.exe -pipe -O0 -std=gnu11 -lgmodule-2.0 -lglib-2.0 -lintl -liconv 
+
+Code:
+ 
+        #include <iconv.h>
+        int main(void) {
+          iconv_t conv = iconv_open("WCHAR_T", "UCS-2");
+          return conv != (iconv_t) -1;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpyo_8cnuk/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("brlapi.h")
+          #error "Header 'brlapi.h' could not be found"
+         #endif
+        #else
+         #include <brlapi.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpyo_8cnuk/testfile.c:4:12: error: "Header 'brlapi.h' could not be found"
+          #error "Header 'brlapi.h' could not be found"
+           ^
+1 error generated.
+
+Has header "brlapi.h" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpv9540ogm
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpv9540ogm/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpv9540ogm/output.exe -pipe -O0 -lrados -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ ld: library 'rados' not found
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+Library rados found: NO
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpgrdzxeg5/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("rbd/librbd.h")
+          #error "Header 'rbd/librbd.h' could not be found"
+         #endif
+        #else
+         #include <rbd/librbd.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpgrdzxeg5/testfile.c:4:12: error: "Header 'rbd/librbd.h' could not be found"
+          #error "Header 'rbd/librbd.h' could not be found"
+           ^
+1 error generated.
+
+Has header "rbd/librbd.h" : NO (cached)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'glusterfs-api' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion glusterfs-api` -> 1
+
+Run-time dependency glusterfs-api found: NO (tried pkgconfig)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmph5ttwmmj/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("bzlib.h")
+          #error "Header 'bzlib.h' could not be found"
+         #endif
+        #else
+         #include <bzlib.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ 
+Has header "bzlib.h" : YES (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpqoxyk64n
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpqoxyk64n/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpqoxyk64n/output.exe -pipe -O0 -lbz2 -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library bz2 found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpey0t7cbs/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpey0t7cbs/output.exe -pipe -O0 -std=gnu11 -lbz2 
+
+Code:
+ 
+     #include <bzlib.h>
+     int main(void) { BZ2_bzlibVersion(); return 0; }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpu1k1hli6/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("lzfse.h")
+          #error "Header 'lzfse.h' could not be found"
+         #endif
+        #else
+         #include <lzfse.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpu1k1hli6/testfile.c:4:12: error: "Header 'lzfse.h' could not be found"
+          #error "Header 'lzfse.h' could not be found"
+           ^
+1 error generated.
+
+Has header "lzfse.h" : NO (cached)
+Dependency gnutls found: YES 3.8.3 (cached)
+Dependency libgcrypt found: YES 1.10.3 (cached)
+Dependency libpng found: YES 1.6.42 (cached)
+Dependency libjpeg found: YES 3.0.1 (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp6b0khb7r/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sasl/sasl.h")
+          #error "Header 'sasl/sasl.h' could not be found"
+         #endif
+        #else
+         #include <sasl/sasl.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ 
+Has header "sasl/sasl.h" : YES (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpy7ls8zyc
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpy7ls8zyc/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpy7ls8zyc/output.exe -pipe -O0 -lsasl2 -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library sasl2 found: YES
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp_mfi_aj9/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("security/pam_appl.h")
+          #error "Header 'security/pam_appl.h' could not be found"
+         #endif
+        #else
+         #include <security/pam_appl.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ 
+Has header "security/pam_appl.h" : YES (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp5a09m6ke
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp5a09m6ke/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp5a09m6ke/output.exe -pipe -O0 -lpam -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library pam found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmphwb7n3qc/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmphwb7n3qc/output.exe -pipe -O0 -std=gnu11 -lpam 
+
+Code:
+ 
+   #include <stddef.h>
+   #include <security/pam_appl.h>
+   int main(void) {
+     const char *service_name = "qemu";
+     const char *user = "frank";
+     const struct pam_conv pam_conv = { 0 };
+     pam_handle_t *pamh = NULL;
+     pam_start(service_name, user, &pam_conv, &pamh);
+     return 0;
+   }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp9piaba8u/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("snappy-c.h")
+          #error "Header 'snappy-c.h' could not be found"
+         #endif
+        #else
+         #include <snappy-c.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ 
+Has header "snappy-c.h" : YES (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpg5pkig3n
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpg5pkig3n/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpg5pkig3n/output.exe -pipe -O0 -lsnappy -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library snappy found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpoclag5yd/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpoclag5yd/output.exe -pipe -O0 -std=gnu11 -lsnappy 
+
+Code:
+ 
+   #include <snappy-c.h>
+   int main(void) { snappy_max_compressed_length(4096); return 0; }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmprwndu2sg/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("lzo/lzo1x.h")
+          #error "Header 'lzo/lzo1x.h' could not be found"
+         #endif
+        #else
+         #include <lzo/lzo1x.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ 
+Has header "lzo/lzo1x.h" : YES (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpq3di89ep
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpq3di89ep/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpq3di89ep/output.exe -pipe -O0 -llzo2 -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library lzo2 found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpoe5f4kj0/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpoe5f4kj0/output.exe -pipe -O0 -std=gnu11 -llzo2 
+
+Code:
+ 
+   #include <lzo/lzo1x.h>
+   int main(void) { lzo_version(); return 0; }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libcacard' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libcacard` -> 1
+
+Run-time dependency libcacard found: NO (tried pkgconfig)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'u2f-emu' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion u2f-emu` -> 1
+
+Run-time dependency u2f-emu found: NO (tried pkgconfig)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libusbredirparser-0.5' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libusbredirparser-0.5` -> 1
+
+Run-time dependency libusbredirparser-0.5 found: NO (tried pkgconfig)
+Dependency libusb-1.0 found: YES 1.0.27 (cached)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libpmem' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libpmem` -> 1
+
+Run-time dependency libpmem found: NO (tried pkgconfig)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libdaxctl' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libdaxctl` -> 1
+
+Run-time dependency libdaxctl found: NO (tried pkgconfig)
+Dependency libtasn1 found: YES 4.19.0 (cached)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libkeyutils' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libkeyutils` -> 1
+
+Run-time dependency libkeyutils found: NO (tried pkgconfig)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmps7xqssjk/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmps7xqssjk/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define gettid meson_disable_define_of_gettid
+        
+        #include <limits.h>
+        #undef gettid
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char gettid (void);
+        
+        #if defined __stub_gettid || defined __stub___gettid
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return gettid ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _gettid, referenced from:
+      _main in testfile-e6fddd.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpdxb2zja7/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpdxb2zja7/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(gettid) && !0
+            #error "No definition for __builtin_gettid found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_gettid)
+                #error "__builtin_gettid not found"
+            #endif
+        #elif ! defined(gettid)
+            __builtin_gettid;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpdxb2zja7/testfile.c:17:18: error: "__builtin_gettid not found"
+                #error "__builtin_gettid not found"
+                 ^
+1 error generated.
+
+Checking for function "gettid" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmput6j_pew/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmput6j_pew/output.exe -pipe -O0 -std=gnu11 
+
+Code:
+ #include <malloc.h>
+                int main(void) { malloc_trim(0); return 0; }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmput6j_pew/testfile.c:1:10: fatal error: 'malloc.h' file not found
+#include <malloc.h>
+         ^~~~~~~~~~
+1 error generated.
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpav3asli8/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpav3asli8/output.exe -pipe -O0 -std=gnu11 
+
+Code:
+ 
+  #ifndef _GNU_SOURCE
+  #define _GNU_SOURCE
+  #endif
+
+  #include <sys/stat.h>
+  int main(void) {
+    struct statx statxbuf;
+    statx(0, "", 0, STATX_BASIC_STATS, &statxbuf);
+    return 0;
+  }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpav3asli8/testfile.c:8:18: error: variable has incomplete type 'struct statx'
+    struct statx statxbuf;
+                 ^
+/Users/lihaoran/siemensSec/qemu/build/meson-private/tmpav3asli8/testfile.c:8:12: note: forward declaration of 'struct statx'
+    struct statx statxbuf;
+           ^
+/Users/lihaoran/siemensSec/qemu/build/meson-private/tmpav3asli8/testfile.c:9:5: error: call to undeclared function 'statx'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    statx(0, "", 0, STATX_BASIC_STATS, &statxbuf);
+    ^
+/Users/lihaoran/siemensSec/qemu/build/meson-private/tmpav3asli8/testfile.c:9:5: note: did you mean 'stat'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/sys/stat.h:387:9: note: 'stat' declared here
+int     stat(const char *, struct stat *) __DARWIN_INODE64(stat);
+        ^
+/Users/lihaoran/siemensSec/qemu/build/meson-private/tmpav3asli8/testfile.c:9:21: error: use of undeclared identifier 'STATX_BASIC_STATS'
+    statx(0, "", 0, STATX_BASIC_STATS, &statxbuf);
+                    ^
+3 errors generated.
+
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'fuse3' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion fuse3` -> 1
+
+Run-time dependency fuse3 found: NO (tried pkgconfig)
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'libbpf' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion libbpf` -> 1
+
+Run-time dependency libbpf found: NO (tried pkgconfig)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpe0hryl3b/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("IOKit/storage/IOMedia.h")
+          #error "Header 'IOKit/storage/IOMedia.h' could not be found"
+         #endif
+        #else
+         #include <IOKit/storage/IOMedia.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ 
+Has header "IOKit/storage/IOMedia.h" : YES (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpbifob_va/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/epoll.h")
+          #error "Header 'sys/epoll.h' could not be found"
+         #endif
+        #else
+         #include <sys/epoll.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpbifob_va/testfile.c:4:12: error: "Header 'sys/epoll.h' could not be found"
+          #error "Header 'sys/epoll.h' could not be found"
+           ^
+1 error generated.
+
+Has header "sys/epoll.h" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpdu63569j/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("linux/magic.h")
+          #error "Header 'linux/magic.h' could not be found"
+         #endif
+        #else
+         #include <linux/magic.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpdu63569j/testfile.c:4:12: error: "Header 'linux/magic.h' could not be found"
+          #error "Header 'linux/magic.h' could not be found"
+           ^
+1 error generated.
+
+Has header "linux/magic.h" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpre5pqb33/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("valgrind/valgrind.h")
+          #error "Header 'valgrind/valgrind.h' could not be found"
+         #endif
+        #else
+         #include <valgrind/valgrind.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpre5pqb33/testfile.c:4:12: error: "Header 'valgrind/valgrind.h' could not be found"
+          #error "Header 'valgrind/valgrind.h' could not be found"
+           ^
+1 error generated.
+
+Has header "valgrind/valgrind.h" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpzkn93fft/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("linux/btrfs.h")
+          #error "Header 'linux/btrfs.h' could not be found"
+         #endif
+        #else
+         #include <linux/btrfs.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpzkn93fft/testfile.c:4:12: error: "Header 'linux/btrfs.h' could not be found"
+          #error "Header 'linux/btrfs.h' could not be found"
+           ^
+1 error generated.
+
+Has header "linux/btrfs.h" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1hermx5_/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("libdrm/drm.h")
+          #error "Header 'libdrm/drm.h' could not be found"
+         #endif
+        #else
+         #include <libdrm/drm.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1hermx5_/testfile.c:4:12: error: "Header 'libdrm/drm.h' could not be found"
+          #error "Header 'libdrm/drm.h' could not be found"
+           ^
+1 error generated.
+
+Has header "libdrm/drm.h" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp4uecjyhk/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("pty.h")
+          #error "Header 'pty.h' could not be found"
+         #endif
+        #else
+         #include <pty.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp4uecjyhk/testfile.c:4:12: error: "Header 'pty.h' could not be found"
+          #error "Header 'pty.h' could not be found"
+           ^
+1 error generated.
+
+Has header "pty.h" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpj23hw51d/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/disk.h")
+          #error "Header 'sys/disk.h' could not be found"
+         #endif
+        #else
+         #include <sys/disk.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ 
+Has header "sys/disk.h" : YES (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpawa45uas/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/ioccom.h")
+          #error "Header 'sys/ioccom.h' could not be found"
+         #endif
+        #else
+         #include <sys/ioccom.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ 
+Has header "sys/ioccom.h" : YES (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpi8i7lwv8/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/kcov.h")
+          #error "Header 'sys/kcov.h' could not be found"
+         #endif
+        #else
+         #include <sys/kcov.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpi8i7lwv8/testfile.c:4:12: error: "Header 'sys/kcov.h' could not be found"
+          #error "Header 'sys/kcov.h' could not be found"
+           ^
+1 error generated.
+
+Has header "sys/kcov.h" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1lsrufbu/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1lsrufbu/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define accept4 meson_disable_define_of_accept4
+        
+        #include <limits.h>
+        #undef accept4
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char accept4 (void);
+        
+        #if defined __stub_accept4 || defined __stub___accept4
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return accept4 ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _accept4, referenced from:
+      _main in testfile-ef9bc5.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpm6lh6mtb/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpm6lh6mtb/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(accept4) && !0
+            #error "No definition for __builtin_accept4 found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_accept4)
+                #error "__builtin_accept4 not found"
+            #endif
+        #elif ! defined(accept4)
+            __builtin_accept4;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpm6lh6mtb/testfile.c:17:18: error: "__builtin_accept4 not found"
+                #error "__builtin_accept4 not found"
+                 ^
+1 error generated.
+
+Checking for function "accept4" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmph2h9xsjg/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmph2h9xsjg/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define clock_adjtime meson_disable_define_of_clock_adjtime
+        
+        #include <limits.h>
+        #undef clock_adjtime
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char clock_adjtime (void);
+        
+        #if defined __stub_clock_adjtime || defined __stub___clock_adjtime
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return clock_adjtime ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _clock_adjtime, referenced from:
+      _main in testfile-615d59.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmputnq5v0d/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmputnq5v0d/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(clock_adjtime) && !0
+            #error "No definition for __builtin_clock_adjtime found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_clock_adjtime)
+                #error "__builtin_clock_adjtime not found"
+            #endif
+        #elif ! defined(clock_adjtime)
+            __builtin_clock_adjtime;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmputnq5v0d/testfile.c:17:18: error: "__builtin_clock_adjtime not found"
+                #error "__builtin_clock_adjtime not found"
+                 ^
+1 error generated.
+
+Checking for function "clock_adjtime" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpuba2d14e/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpuba2d14e/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define dup3 meson_disable_define_of_dup3
+        
+        #include <limits.h>
+        #undef dup3
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char dup3 (void);
+        
+        #if defined __stub_dup3 || defined __stub___dup3
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return dup3 ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _dup3, referenced from:
+      _main in testfile-65ed78.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpt1zxxwal/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpt1zxxwal/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(dup3) && !0
+            #error "No definition for __builtin_dup3 found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_dup3)
+                #error "__builtin_dup3 not found"
+            #endif
+        #elif ! defined(dup3)
+            __builtin_dup3;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpt1zxxwal/testfile.c:17:18: error: "__builtin_dup3 not found"
+                #error "__builtin_dup3 not found"
+                 ^
+1 error generated.
+
+Checking for function "dup3" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp4axm4qtp/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp4axm4qtp/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define fallocate meson_disable_define_of_fallocate
+        
+        #include <limits.h>
+        #undef fallocate
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char fallocate (void);
+        
+        #if defined __stub_fallocate || defined __stub___fallocate
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return fallocate ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _fallocate, referenced from:
+      _main in testfile-46f8b9.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpn7fmel26/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpn7fmel26/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(fallocate) && !0
+            #error "No definition for __builtin_fallocate found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_fallocate)
+                #error "__builtin_fallocate not found"
+            #endif
+        #elif ! defined(fallocate)
+            __builtin_fallocate;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpn7fmel26/testfile.c:17:18: error: "__builtin_fallocate not found"
+                #error "__builtin_fallocate not found"
+                 ^
+1 error generated.
+
+Checking for function "fallocate" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp6187yae1/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp6187yae1/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define posix_fallocate meson_disable_define_of_posix_fallocate
+        
+        #include <limits.h>
+        #undef posix_fallocate
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char posix_fallocate (void);
+        
+        #if defined __stub_posix_fallocate || defined __stub___posix_fallocate
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return posix_fallocate ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _posix_fallocate, referenced from:
+      _main in testfile-32a488.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpb4nhml2g/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpb4nhml2g/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(posix_fallocate) && !0
+            #error "No definition for __builtin_posix_fallocate found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_posix_fallocate)
+                #error "__builtin_posix_fallocate not found"
+            #endif
+        #elif ! defined(posix_fallocate)
+            __builtin_posix_fallocate;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpb4nhml2g/testfile.c:17:18: error: "__builtin_posix_fallocate not found"
+                #error "__builtin_posix_fallocate not found"
+                 ^
+1 error generated.
+
+Checking for function "posix_fallocate" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpqwhn_w77/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpqwhn_w77/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define posix_memalign meson_disable_define_of_posix_memalign
+        
+        #include <limits.h>
+        #undef posix_memalign
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char posix_memalign (void);
+        
+        #if defined __stub_posix_memalign || defined __stub___posix_memalign
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return posix_memalign ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Checking for function "posix_memalign" : YES (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp6r7rez3f/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp6r7rez3f/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define ppoll meson_disable_define_of_ppoll
+        
+        #include <limits.h>
+        #undef ppoll
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char ppoll (void);
+        
+        #if defined __stub_ppoll || defined __stub___ppoll
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return ppoll ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _ppoll, referenced from:
+      _main in testfile-6a022e.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpn99hlpjb/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpn99hlpjb/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(ppoll) && !0
+            #error "No definition for __builtin_ppoll found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_ppoll)
+                #error "__builtin_ppoll not found"
+            #endif
+        #elif ! defined(ppoll)
+            __builtin_ppoll;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpn99hlpjb/testfile.c:17:18: error: "__builtin_ppoll not found"
+                #error "__builtin_ppoll not found"
+                 ^
+1 error generated.
+
+Checking for function "ppoll" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp2u9tjndg/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp2u9tjndg/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ #include <sys/uio.h>
+#include <limits.h>
+
+        #if defined __stub_preadv || defined __stub___preadv
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &preadv;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Checking for function "preadv" : YES (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp80w0in5j/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp80w0in5j/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define sem_timedwait meson_disable_define_of_sem_timedwait
+        
+        #include <limits.h>
+        #undef sem_timedwait
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char sem_timedwait (void);
+        
+        #if defined __stub_sem_timedwait || defined __stub___sem_timedwait
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return sem_timedwait ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _sem_timedwait, referenced from:
+      _main in testfile-485554.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmprffu6ey_/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmprffu6ey_/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(sem_timedwait) && !0
+            #error "No definition for __builtin_sem_timedwait found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_sem_timedwait)
+                #error "__builtin_sem_timedwait not found"
+            #endif
+        #elif ! defined(sem_timedwait)
+            __builtin_sem_timedwait;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmprffu6ey_/testfile.c:17:18: error: "__builtin_sem_timedwait not found"
+                #error "__builtin_sem_timedwait not found"
+                 ^
+1 error generated.
+
+Checking for function "sem_timedwait" with dependency threads: NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp5yjofh7u/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp5yjofh7u/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define sendfile meson_disable_define_of_sendfile
+        
+        #include <limits.h>
+        #undef sendfile
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char sendfile (void);
+        
+        #if defined __stub_sendfile || defined __stub___sendfile
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return sendfile ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Checking for function "sendfile" : YES (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpt005y5q6/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpt005y5q6/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define setns meson_disable_define_of_setns
+        
+        #include <limits.h>
+        #undef setns
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char setns (void);
+        
+        #if defined __stub_setns || defined __stub___setns
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return setns ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _setns, referenced from:
+      _main in testfile-c56a12.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpy6om41zv/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpy6om41zv/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(setns) && !0
+            #error "No definition for __builtin_setns found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_setns)
+                #error "__builtin_setns not found"
+            #endif
+        #elif ! defined(setns)
+            __builtin_setns;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpy6om41zv/testfile.c:17:18: error: "__builtin_setns not found"
+                #error "__builtin_setns not found"
+                 ^
+1 error generated.
+
+Checking for function "setns" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpkp87b98t/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpkp87b98t/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define syncfs meson_disable_define_of_syncfs
+        
+        #include <limits.h>
+        #undef syncfs
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char syncfs (void);
+        
+        #if defined __stub_syncfs || defined __stub___syncfs
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return syncfs ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _syncfs, referenced from:
+      _main in testfile-be5c89.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpj8kasagn/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpj8kasagn/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(syncfs) && !0
+            #error "No definition for __builtin_syncfs found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_syncfs)
+                #error "__builtin_syncfs not found"
+            #endif
+        #elif ! defined(syncfs)
+            __builtin_syncfs;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpj8kasagn/testfile.c:17:18: error: "__builtin_syncfs not found"
+                #error "__builtin_syncfs not found"
+                 ^
+1 error generated.
+
+Checking for function "syncfs" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmprv0p1phf/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmprv0p1phf/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define sync_file_range meson_disable_define_of_sync_file_range
+        
+        #include <limits.h>
+        #undef sync_file_range
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char sync_file_range (void);
+        
+        #if defined __stub_sync_file_range || defined __stub___sync_file_range
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return sync_file_range ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _sync_file_range, referenced from:
+      _main in testfile-8eba92.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmptvu6v705/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmptvu6v705/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(sync_file_range) && !0
+            #error "No definition for __builtin_sync_file_range found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_sync_file_range)
+                #error "__builtin_sync_file_range not found"
+            #endif
+        #elif ! defined(sync_file_range)
+            __builtin_sync_file_range;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmptvu6v705/testfile.c:17:18: error: "__builtin_sync_file_range not found"
+                #error "__builtin_sync_file_range not found"
+                 ^
+1 error generated.
+
+Checking for function "sync_file_range" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpo1dl6rh2/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpo1dl6rh2/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define timerfd_create meson_disable_define_of_timerfd_create
+        
+        #include <limits.h>
+        #undef timerfd_create
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char timerfd_create (void);
+        
+        #if defined __stub_timerfd_create || defined __stub___timerfd_create
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return timerfd_create ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _timerfd_create, referenced from:
+      _main in testfile-260a39.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmptv_vuep3/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmptv_vuep3/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(timerfd_create) && !0
+            #error "No definition for __builtin_timerfd_create found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_timerfd_create)
+                #error "__builtin_timerfd_create not found"
+            #endif
+        #elif ! defined(timerfd_create)
+            __builtin_timerfd_create;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmptv_vuep3/testfile.c:17:18: error: "__builtin_timerfd_create not found"
+                #error "__builtin_timerfd_create not found"
+                 ^
+1 error generated.
+
+Checking for function "timerfd_create" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp13pf63vy/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp13pf63vy/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define copy_file_range meson_disable_define_of_copy_file_range
+        
+        #include <limits.h>
+        #undef copy_file_range
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char copy_file_range (void);
+        
+        #if defined __stub_copy_file_range || defined __stub___copy_file_range
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return copy_file_range ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _copy_file_range, referenced from:
+      _main in testfile-7a2bcc.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmps9fyue2e/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmps9fyue2e/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(copy_file_range) && !0
+            #error "No definition for __builtin_copy_file_range found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_copy_file_range)
+                #error "__builtin_copy_file_range not found"
+            #endif
+        #elif ! defined(copy_file_range)
+            __builtin_copy_file_range;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmps9fyue2e/testfile.c:17:18: error: "__builtin_copy_file_range not found"
+                #error "__builtin_copy_file_range not found"
+                 ^
+1 error generated.
+
+Checking for function "copy_file_range" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpjpahstc9/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpjpahstc9/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports -lutil 
+
+Code:
+ 
+        #define openpty meson_disable_define_of_openpty
+        
+        #include <limits.h>
+        #undef openpty
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char openpty (void);
+        
+        #if defined __stub_openpty || defined __stub___openpty
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return openpty ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Checking for function "openpty" with dependency -lutil: YES (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp_brh4uv_/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp_brh4uv_/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define strchrnul meson_disable_define_of_strchrnul
+        
+        #include <limits.h>
+        #undef strchrnul
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strchrnul (void);
+        
+        #if defined __stub_strchrnul || defined __stub___strchrnul
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return strchrnul ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _strchrnul, referenced from:
+      _main in testfile-4dcb69.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp042tgu_6/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp042tgu_6/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(strchrnul) && !0
+            #error "No definition for __builtin_strchrnul found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_strchrnul)
+                #error "__builtin_strchrnul not found"
+            #endif
+        #elif ! defined(strchrnul)
+            __builtin_strchrnul;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp042tgu_6/testfile.c:17:18: error: "__builtin_strchrnul not found"
+                #error "__builtin_strchrnul not found"
+                 ^
+1 error generated.
+
+Checking for function "strchrnul" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp4q786luv/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp4q786luv/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ #include <stdlib.h>
+#include <limits.h>
+
+        #if defined __stub_system || defined __stub___system
+        fail fail fail this function is not going to work
+        #endif
+        
+int main(void) {
+            void *a = (void*) &system;
+            long long b = (long long) a;
+            return (int) b;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Checking for function "system" : YES (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmppbs53jrx/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmppbs53jrx/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ 
+        #include <byteswap.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef bswap_32
+                bswap_32;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmppbs53jrx/testfile.c:2:18: fatal error: 'byteswap.h' file not found
+        #include <byteswap.h>
+                 ^~~~~~~~~~~~
+1 error generated.
+
+Header <byteswap.h> has symbol "bswap_32" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpx_gubjqc/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpx_gubjqc/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ 
+        #include <sys/epoll.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef epoll_create1
+                epoll_create1;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpx_gubjqc/testfile.c:2:18: fatal error: 'sys/epoll.h' file not found
+        #include <sys/epoll.h>
+                 ^~~~~~~~~~~~~
+1 error generated.
+
+Header <sys/epoll.h> has symbol "epoll_create1" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmppm8itvbc/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmppm8itvbc/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ 
+  #ifndef _GNU_SOURCE
+  #define _GNU_SOURCE
+  #endif
+
+        #include <unistd.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef environ
+                environ;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmppm8itvbc/testfile.c:10:17: error: use of undeclared identifier 'environ'
+                environ;
+                ^
+1 error generated.
+
+Header <unistd.h> has symbol "environ" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpg1625ou7/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpg1625ou7/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ 
+        #include <linux/falloc.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef FALLOC_FL_PUNCH_HOLE
+                FALLOC_FL_PUNCH_HOLE;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpg1625ou7/testfile.c:2:18: fatal error: 'linux/falloc.h' file not found
+        #include <linux/falloc.h>
+                 ^~~~~~~~~~~~~~~~
+1 error generated.
+
+Header <linux/falloc.h> has symbol "FALLOC_FL_PUNCH_HOLE" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp9v9h0feu/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp9v9h0feu/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ 
+        #include <linux/falloc.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef FALLOC_FL_ZERO_RANGE
+                FALLOC_FL_ZERO_RANGE;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp9v9h0feu/testfile.c:2:18: fatal error: 'linux/falloc.h' file not found
+        #include <linux/falloc.h>
+                 ^~~~~~~~~~~~~~~~
+1 error generated.
+
+Header <linux/falloc.h> has symbol "FALLOC_FL_ZERO_RANGE" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpwt7xxrzx/testfile.c -pipe -E -P -P -O0 -std=gnu11 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("linux/fiemap.h")
+          #error "Header 'linux/fiemap.h' could not be found"
+         #endif
+        #else
+         #include <linux/fiemap.h>
+        #endif
+Cached compiler stdout:
+ 
+
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpwt7xxrzx/testfile.c:4:12: error: "Header 'linux/fiemap.h' could not be found"
+          #error "Header 'linux/fiemap.h' could not be found"
+           ^
+1 error generated.
+
+Has header "linux/fiemap.h" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp2ofmupr9/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp2ofmupr9/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        #define getrandom meson_disable_define_of_getrandom
+        
+        #include <limits.h>
+        #undef getrandom
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char getrandom (void);
+        
+        #if defined __stub_getrandom || defined __stub___getrandom
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return getrandom ();
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ ld: Undefined symbols:
+  _getrandom, referenced from:
+      _main in testfile-f65531.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpcualhd5i/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpcualhd5i/output.exe -pipe -O0 -std=gnu11 -Wl,-no_weak_imports 
+
+Code:
+ 
+        int main(void) {
+
+        /* With some toolchains (MSYS2/mingw for example) the compiler
+         * provides various builtins which are not really implemented and
+         * fall back to the stdlib where they aren't provided and fail at
+         * build/link time. In case the user provides a header, including
+         * the header didn't lead to the function being defined, and the
+         * function we are checking isn't a builtin itself we assume the
+         * builtin is not functional and we just error out. */
+        #if !1 && !defined(getrandom) && !0
+            #error "No definition for __builtin_getrandom found in the prefix"
+        #endif
+
+        #ifdef __has_builtin
+            #if !__has_builtin(__builtin_getrandom)
+                #error "__builtin_getrandom not found"
+            #endif
+        #elif ! defined(getrandom)
+            __builtin_getrandom;
+        #endif
+        return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpcualhd5i/testfile.c:17:18: error: "__builtin_getrandom not found"
+                #error "__builtin_getrandom not found"
+                 ^
+1 error generated.
+
+Checking for function "getrandom" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpqqs6m1a9/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpqqs6m1a9/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ 
+        #include <sys/inotify.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef inotify_init
+                inotify_init;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpqqs6m1a9/testfile.c:2:18: fatal error: 'sys/inotify.h' file not found
+        #include <sys/inotify.h>
+                 ^~~~~~~~~~~~~~~
+1 error generated.
+
+Header <sys/inotify.h> has symbol "inotify_init" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1k7_ogs3/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1k7_ogs3/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ 
+        #include <sys/inotify.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef inotify_init1
+                inotify_init1;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1k7_ogs3/testfile.c:2:18: fatal error: 'sys/inotify.h' file not found
+        #include <sys/inotify.h>
+                 ^~~~~~~~~~~~~~~
+1 error generated.
+
+Header <sys/inotify.h> has symbol "inotify_init1" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmplpw8p_wm/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmplpw8p_wm/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ #include <sys/endian.h>
+                                                     #include <sys/types.h>
+        #include <machine/bswap.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef bswap32
+                bswap32;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmplpw8p_wm/testfile.c:1:10: fatal error: 'sys/endian.h' file not found
+#include <sys/endian.h>
+         ^~~~~~~~~~~~~~
+1 error generated.
+
+Header <machine/bswap.h> has symbol "bswap32" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp23by7jfw/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp23by7jfw/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ 
+        #include <sys/prctl.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef PR_SET_TIMERSLACK
+                PR_SET_TIMERSLACK;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp23by7jfw/testfile.c:2:18: fatal error: 'sys/prctl.h' file not found
+        #include <sys/prctl.h>
+                 ^~~~~~~~~~~~~
+1 error generated.
+
+Header <sys/prctl.h> has symbol "PR_SET_TIMERSLACK" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpoa3jp25n/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpoa3jp25n/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ 
+        #include <linux/rtnetlink.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef IFLA_PROTO_DOWN
+                IFLA_PROTO_DOWN;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpoa3jp25n/testfile.c:2:18: fatal error: 'linux/rtnetlink.h' file not found
+        #include <linux/rtnetlink.h>
+                 ^~~~~~~~~~~~~~~~~~~
+1 error generated.
+
+Header <linux/rtnetlink.h> has symbol "IFLA_PROTO_DOWN" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpxfwwmn0k/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpxfwwmn0k/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ 
+        #include <sys/sysmacros.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef makedev
+                makedev;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpxfwwmn0k/testfile.c:2:18: fatal error: 'sys/sysmacros.h' file not found
+        #include <sys/sysmacros.h>
+                 ^~~~~~~~~~~~~~~~~
+1 error generated.
+
+Header <sys/sysmacros.h> has symbol "makedev" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp0g09eqrq/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp0g09eqrq/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ 
+        #include <getopt.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef optreset
+                optreset;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp0g09eqrq/testfile.c:6:17: warning: expression result unused [-Wunused-value]
+                optreset;
+                ^~~~~~~~
+1 warning generated.
+
+Header <getopt.h> has symbol "optreset" : YES (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp031jyuge/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp031jyuge/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ 
+        #include <utmpx.h>
+        int main(void) {
+            /* If it's not defined as a macro, try to use as a symbol */
+            #ifndef struct utmpx
+                struct utmpx;
+            #endif
+            return 0;
+        }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp031jyuge/testfile.c:5:28: warning: extra tokens at end of #ifndef directive [-Wextra-tokens]
+            #ifndef struct utmpx
+                           ^
+                           //
+1 warning generated.
+
+Header <utmpx.h> has symbol "struct utmpx" : YES (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpogngtl1g/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpogngtl1g/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ #include <signal.h>
+        void bar(void) {
+            struct sigevent foo;
+            foo.sigev_notify_thread_id;
+
+        };
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpogngtl1g/testfile.c:4:17: error: no member named 'sigev_notify_thread_id' in 'struct sigevent'
+            foo.sigev_notify_thread_id;
+            ~~~ ^
+1 error generated.
+
+Checking whether type "struct sigevent" has member "sigev_notify_thread_id" : NO (cached)
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp75k6yfkr/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp75k6yfkr/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ #include <sys/stat.h>
+        void bar(void) {
+            struct stat foo;
+            foo.st_atim;
+
+        };
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp75k6yfkr/testfile.c:4:17: error: no member named 'st_atim' in 'struct stat'
+            foo.st_atim;
+            ~~~ ^
+1 error generated.
+
+Checking whether type "struct stat" has member "st_atim" : NO (cached)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpl6_jsf0j/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpl6_jsf0j/output.exe -pipe -O0 -std=gnu11 
+
+Code:
+ 
+  #include <sys/eventfd.h>
+  int main(void) { return eventfd(0, EFD_NONBLOCK | EFD_CLOEXEC); }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpl6_jsf0j/testfile.c:2:12: fatal error: 'sys/eventfd.h' file not found
+  #include <sys/eventfd.h>
+           ^~~~~~~~~~~~~~~
+1 error generated.
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1x_acjt7/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1x_acjt7/output.exe -pipe -O0 -std=gnu11 
+
+Code:
+ 
+  #ifndef _GNU_SOURCE
+  #define _GNU_SOURCE
+  #endif
+
+  #include <unistd.h>
+  int main(void) {
+  #if defined(_POSIX_SYNCHRONIZED_IO) && _POSIX_SYNCHRONIZED_IO > 0
+  return fdatasync(0);
+  #else
+  #error Not supported
+  #endif
+  }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1x_acjt7/testfile.c:11:4: error: Not supported
+  #error Not supported
+   ^
+1 error generated.
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpu06hpn81/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpu06hpn81/output.exe -pipe -O0 -std=gnu11 
+
+Code:
+ 
+  #ifndef _GNU_SOURCE
+  #define _GNU_SOURCE
+  #endif
+
+  #include <sys/types.h>
+  #include <sys/mman.h>
+  #include <stddef.h>
+  int main(void) { return madvise(NULL, 0, MADV_DONTNEED); }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp4pd5tnuv/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp4pd5tnuv/output.exe -pipe -O0 -std=gnu11 
+
+Code:
+ 
+  #ifndef _GNU_SOURCE
+  #define _GNU_SOURCE
+  #endif
+
+  #include <sys/mman.h>
+  int main(void) { return memfd_create("foo", MFD_ALLOW_SEALING); }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp4pd5tnuv/testfile.c:7:27: error: call to undeclared function 'memfd_create'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  int main(void) { return memfd_create("foo", MFD_ALLOW_SEALING); }
+                          ^
+/Users/lihaoran/siemensSec/qemu/build/meson-private/tmp4pd5tnuv/testfile.c:7:47: error: use of undeclared identifier 'MFD_ALLOW_SEALING'
+  int main(void) { return memfd_create("foo", MFD_ALLOW_SEALING); }
+                                              ^
+2 errors generated.
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpro2kotv2/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpro2kotv2/output.exe -pipe -O0 -std=gnu11 
+
+Code:
+ 
+  #ifndef _GNU_SOURCE
+  #define _GNU_SOURCE
+  #endif
+
+  #include <fcntl.h>
+  #if !defined(AT_EMPTY_PATH)
+  # error missing definition
+  #else
+  int main(void) { struct file_handle fh; return open_by_handle_at(0, &fh, 0); }
+  #endif
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpro2kotv2/testfile.c:8:5: error: missing definition
+  # error missing definition
+    ^
+1 error generated.
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp8sbh1fad/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp8sbh1fad/output.exe -pipe -O0 -std=gnu11 
+
+Code:
+ 
+  #ifndef _GNU_SOURCE
+  #define _GNU_SOURCE
+  #endif
+
+  #include <unistd.h>
+  #include <fcntl.h>
+
+  int main(void)
+  {
+      int pipefd[2];
+      return pipe2(pipefd, O_CLOEXEC);
+  }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp8sbh1fad/testfile.c:12:14: error: call to undeclared function 'pipe2'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+      return pipe2(pipefd, O_CLOEXEC);
+             ^
+/Users/lihaoran/siemensSec/qemu/build/meson-private/tmp8sbh1fad/testfile.c:12:14: note: did you mean 'pipe'?
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h:470:6: note: 'pipe' declared here
+int      pipe(int [2]);
+         ^
+1 error generated.
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp3wwevk5t/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp3wwevk5t/output.exe -pipe -O0 -std=gnu11 
+
+Code:
+ 
+  #ifndef _GNU_SOURCE
+  #define _GNU_SOURCE
+  #endif
+
+  #include <sys/mman.h>
+  #include <stddef.h>
+  int main(void) { return posix_madvise(NULL, 0, POSIX_MADV_DONTNEED); }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp_03t85ce/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp_03t85ce/output.exe -pipe -O0 -std=gnu11 
+
+Code:
+ 
+  #ifndef _GNU_SOURCE
+  #define _GNU_SOURCE
+  #endif
+
+  #include <unistd.h>
+  #include <sys/syscall.h>
+  #include <signal.h>
+  int main(void) { return syscall(SYS_signalfd, -1, NULL, _NSIG / 8); }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp_03t85ce/testfile.c:9:27: warning: 'syscall' is deprecated: first deprecated in macOS 10.12 - syscall(2) is unsupported; please switch to a supported interface. For SYS_kdebug_trace use kdebug_signpost(). [-Wdeprecated-declarations]
+  int main(void) { return syscall(SYS_signalfd, -1, NULL, _NSIG / 8); }
+                          ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/unistd.h:748:6: note: 'syscall' has been explicitly marked deprecated here
+int      syscall(int, ...);
+         ^
+/Users/lihaoran/siemensSec/qemu/build/meson-private/tmp_03t85ce/testfile.c:9:35: error: use of undeclared identifier 'SYS_signalfd'
+  int main(void) { return syscall(SYS_signalfd, -1, NULL, _NSIG / 8); }
+                                  ^
+/Users/lihaoran/siemensSec/qemu/build/meson-private/tmp_03t85ce/testfile.c:9:59: error: use of undeclared identifier '_NSIG'
+  int main(void) { return syscall(SYS_signalfd, -1, NULL, _NSIG / 8); }
+                                                          ^
+1 warning and 2 errors generated.
+
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp29douowu/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp29douowu/output.exe -pipe -O0 -std=gnu11 
+
+Code:
+ 
+  #ifndef _GNU_SOURCE
+  #define _GNU_SOURCE
+  #endif
+
+  #include <unistd.h>
+  #include <fcntl.h>
+  #include <limits.h>
+
+  int main(void)
+  {
+    int len, fd = 0;
+    len = tee(STDIN_FILENO, STDOUT_FILENO, INT_MAX, SPLICE_F_NONBLOCK);
+    splice(STDIN_FILENO, NULL, fd, NULL, len, SPLICE_F_MOVE);
+    return 0;
+  }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp29douowu/testfile.c:13:11: error: call to undeclared function 'tee'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    len = tee(STDIN_FILENO, STDOUT_FILENO, INT_MAX, SPLICE_F_NONBLOCK);
+          ^
+/Users/lihaoran/siemensSec/qemu/build/meson-private/tmp29douowu/testfile.c:13:53: error: use of undeclared identifier 'SPLICE_F_NONBLOCK'
+    len = tee(STDIN_FILENO, STDOUT_FILENO, INT_MAX, SPLICE_F_NONBLOCK);
+                                                    ^
+/Users/lihaoran/siemensSec/qemu/build/meson-private/tmp29douowu/testfile.c:14:5: error: call to undeclared function 'splice'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+    splice(STDIN_FILENO, NULL, fd, NULL, len, SPLICE_F_MOVE);
+    ^
+/Users/lihaoran/siemensSec/qemu/build/meson-private/tmp29douowu/testfile.c:14:47: error: use of undeclared identifier 'SPLICE_F_MOVE'
+    splice(STDIN_FILENO, NULL, fd, NULL, len, SPLICE_F_MOVE);
+                                              ^
+4 errors generated.
+
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpyjyy0cqn/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpyjyy0cqn/output.obj -pipe -c -O0 -std=gnu11 -Werror 
+
+Code:
+ 
+    #include <stdint.h>
+    #include <stdio.h>
+    int main(int argc, char *argv[]) {
+        return printf("%zu", SIZE_MAX);
+    }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Program scripts/minikconf.py found: YES
+Configuring mips-softmmu-config-target.h using configuration
+Configuring mips-softmmu-config-devices.mak with command
+Running command: /Library/Developer/CommandLineTools/usr/bin/python3 /Users/lihaoran/siemensSec/qemu/scripts/minikconf.py --defconfig mips-softmmu-config-devices.mak /Users/lihaoran/siemensSec/qemu/build/meson-private/mips-softmmu-config-devices.mak.d /Users/lihaoran/siemensSec/qemu/configs/devices/mips-softmmu/default.mak /Users/lihaoran/siemensSec/qemu/Kconfig CONFIG_TPM=y CONFIG_TCG=y CONFIG_MIPS=y
+--- stdout ---
+CONFIG_AC97=y
+CONFIG_ACPI=y
+CONFIG_ACPI_CPU_HOTPLUG=y
+CONFIG_ACPI_HMAT=y
+CONFIG_ACPI_MEMORY_HOTPLUG=y
+CONFIG_ACPI_NVDIMM=y
+CONFIG_ACPI_SMBUS=y
+CONFIG_ACPI_X86=y
+CONFIG_ADLIB=y
+CONFIG_AHCI=y
+CONFIG_AHCI_ICH9=y
+CONFIG_APM=y
+CONFIG_ATI_VGA=y
+CONFIG_BITBANG_I2C=y
+CONFIG_BOCHS_DISPLAY=y
+CONFIG_CAN_BUS=y
+CONFIG_CAN_CTUCANFD=y
+CONFIG_CAN_CTUCANFD_PCI=y
+CONFIG_CAN_PCI=y
+CONFIG_CAN_SJA1000=y
+CONFIG_CS4231A=y
+CONFIG_DDC=y
+CONFIG_E1000_PCI=y
+CONFIG_EDID=y
+CONFIG_EEPRO100_PCI=y
+CONFIG_EMPTY_SLOT=y
+CONFIG_ES1370=y
+CONFIG_ESP=y
+CONFIG_ESP_PCI=y
+CONFIG_FDC=y
+CONFIG_FDC_ISA=y
+CONFIG_GENERIC_LOADER=y
+CONFIG_GUEST_LOADER=y
+CONFIG_GUS=y
+CONFIG_HDA=y
+CONFIG_I2C=y
+CONFIG_I8254=y
+CONFIG_I8257=y
+CONFIG_I8259=y
+CONFIG_IDE_CORE=y
+CONFIG_IDE_ISA=y
+CONFIG_IDE_PCI=y
+CONFIG_IDE_PIIX=y
+CONFIG_IDE_QDEV=y
+CONFIG_IMX_USBPHY=y
+CONFIG_IPACK=y
+CONFIG_ISA_BUS=y
+CONFIG_ISA_SUPERIO=y
+CONFIG_ISA_TESTDEV=y
+CONFIG_LSI_SCSI_PCI=y
+CONFIG_MALTA=y
+CONFIG_MC146818RTC=y
+CONFIG_MEGASAS_SCSI_PCI=y
+CONFIG_MEM_DEVICE=y
+CONFIG_MIPSNET=y
+CONFIG_MIPSSIM=y
+CONFIG_MIPS_CPS=y
+CONFIG_MIPS_ITU=y
+CONFIG_MPTSAS_SCSI_PCI=y
+CONFIG_NE2000_COMMON=y
+CONFIG_NE2000_ISA=y
+CONFIG_NE2000_PCI=y
+CONFIG_NMC93XX_EEPROM=y
+CONFIG_NVME_PCI=y
+CONFIG_PARALLEL=y
+CONFIG_PCI=y
+CONFIG_PCI_DEVICES=y
+CONFIG_PCI_TESTDEV=y
+CONFIG_PCKBD=y
+CONFIG_PCNET_COMMON=y
+CONFIG_PCNET_PCI=y
+CONFIG_PCSPK=y
+CONFIG_PFLASH_CFI01=y
+CONFIG_PIIX4=y
+CONFIG_PS2=y
+CONFIG_PTIMER=y
+CONFIG_PVPANIC_COMMON=y
+CONFIG_PVPANIC_PCI=y
+CONFIG_RTL8139_PCI=y
+CONFIG_SB16=y
+CONFIG_SCSI=y
+CONFIG_SD=y
+CONFIG_SDHCI=y
+CONFIG_SDHCI_PCI=y
+CONFIG_SEMIHOSTING=y
+CONFIG_SERIAL=y
+CONFIG_SERIAL_ISA=y
+CONFIG_SERIAL_PCI=y
+CONFIG_SERIAL_PCI_MULTI=y
+CONFIG_SMBUS=y
+CONFIG_SMBUS_EEPROM=y
+CONFIG_TEST_DEVICES=y
+CONFIG_TULIP=y
+CONFIG_USB=y
+CONFIG_USB_AUDIO=y
+CONFIG_USB_EHCI=y
+CONFIG_USB_EHCI_PCI=y
+CONFIG_USB_NETWORK=y
+CONFIG_USB_OHCI=y
+CONFIG_USB_OHCI_PCI=y
+CONFIG_USB_SERIAL=y
+CONFIG_USB_SMARTCARD=y
+CONFIG_USB_STORAGE_BOT=y
+CONFIG_USB_STORAGE_CLASSIC=y
+CONFIG_USB_STORAGE_CORE=y
+CONFIG_USB_STORAGE_MTP=y
+CONFIG_USB_STORAGE_UAS=y
+CONFIG_USB_TABLET_WACOM=y
+CONFIG_USB_U2F=y
+CONFIG_USB_UHCI=y
+CONFIG_USB_XHCI=y
+CONFIG_USB_XHCI_NEC=y
+CONFIG_USB_XHCI_PCI=y
+CONFIG_VGA=y
+CONFIG_VGA_CIRRUS=y
+CONFIG_VGA_ISA=y
+CONFIG_VGA_ISA_MM=y
+CONFIG_VGA_PCI=y
+CONFIG_VIRTIO=y
+CONFIG_VIRTIO_BALLOON=y
+CONFIG_VIRTIO_BLK=y
+CONFIG_VIRTIO_CRYPTO=y
+CONFIG_VIRTIO_GPU=y
+CONFIG_VIRTIO_INPUT=y
+CONFIG_VIRTIO_IOMMU=y
+CONFIG_VIRTIO_NET=y
+CONFIG_VIRTIO_PCI=y
+CONFIG_VIRTIO_RNG=y
+CONFIG_VIRTIO_SCSI=y
+CONFIG_VIRTIO_SERIAL=y
+CONFIG_VMWARE_VGA=y
+CONFIG_VMW_PVSCSI_SCSI_PCI=y
+CONFIG_VMXNET3_PCI=y
+CONFIG_WDT_IB6300ESB=y
+CONFIG_WDT_IB700=y
+
+--- stderr ---
+
+
+Reading depfile: /Users/lihaoran/siemensSec/qemu/build/meson-private/mips-softmmu-config-devices.mak.d
+Configuring mips-softmmu-config-devices.h using configuration
+Dependency capstone found: YES 5.0.1 (cached)
+Using cached compile:
+Cached command line:  cc -I/usr/local/Cellar/capstone/5.0.1/include/capstone /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp0tk1j8x0/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp0tk1j8x0/output.obj -pipe -c -O0 -std=gnu11 
+
+Code:
+ #include <capstone.h>
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Pkg-config binary for MachineChoice.HOST is cached.
+Determining dependency 'slirp' with pkg-config executable '/usr/local/bin/pkg-config'
+PKG_CONFIG_PATH: 
+Called `/usr/local/bin/pkg-config --modversion slirp` -> 1
+
+Run-time dependency slirp found: NO (tried pkgconfig)
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpwmaap1e6
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpwmaap1e6/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpwmaap1e6/output.exe -pipe -O0 -lresolv -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library resolv found: YES
+Configuring libslirp-version.h using configuration
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp3hhm9f17
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp3hhm9f17/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp3hhm9f17/output.exe -pipe -O0 -lfdt -Wl,-undefined,dynamic_lookup 
+
+Code:
+ int main(void) { return 0; }
+
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Library fdt found: YES
+None of 'CC_LD' are defined in the environment, not changing global flags.
+Using cached compile:
+Cached command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpzb6o6nka/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpzb6o6nka/output.exe -pipe -O0 -std=gnu11 -lfdt 
+
+Code:
+ 
+       #include <libfdt.h>
+       #include <libfdt_env.h>
+       int main(void) { fdt_check_full(NULL, 0); return 0; }
+Cached compiler stdout:
+ 
+Cached compiler stderr:
+ 
+Configuring config-host.h using configuration
+Program scripts/hxtool found: YES
+Program scripts/shaderinclude.pl found: YES
+Program scripts/qapi-gen.py found: YES
+Program scripts/qemu-version.sh found: YES
+Program keycodemapdb/tools/keymap-gen found: YES
+Program scripts/decodetree.py found: YES
+Running command: /bin/sh -c cd $MESON_SOURCE_ROOT/$MESON_SUBDIR ; ls -1 core-*.c
+--- stdout ---
+core-dc232b.c
+core-dc233c.c
+core-de212.c
+core-de233_fpu.c
+core-dsp3400.c
+core-fsf.c
+core-sample_controller.c
+core-test_kc705_be.c
+core-test_mmuhifi_c3.c
+
+--- stderr ---
+
+
+Program ../scripts/modules/module_block.py found: YES
+Program ../scripts/block-coroutine-wrapper.py found: YES
+Program scripts/modinfo-collect.py found: YES
+Program scripts/modinfo-generate.py found: YES
+Program nm found: YES
+Program scripts/undefsym.py found: YES
+Program scripts/feature_to_c.sh found: YES
+Program scripts/entitlement.sh found: YES (/Users/lihaoran/siemensSec/qemu/scripts/entitlement.sh)
+Program qemu-keymap found: NO
+Program sphinx-build-3 sphinx-build found: NO
+Program python3 found: YES (/Library/Developer/CommandLineTools/usr/bin/python3)
+Adding benchmark "benchmark-crypto-hash"
+Adding benchmark "benchmark-crypto-hmac"
+Adding benchmark "benchmark-crypto-cipher"
+Adding test "decodetree"
+Adding test "fp-test-float-to-float"
+Adding test "fp-test-int-to-float"
+Adding test "fp-test-uint-to-float"
+Adding test "fp-test-float-to-int"
+Adding test "fp-test-float-to-uint"
+Adding test "fp-test-round-to-integer"
+Adding test "fp-test-eq_signaling"
+Adding test "fp-test-le"
+Adding test "fp-test-le_quiet"
+Adding test "fp-test-lt_quiet"
+Adding test "fp-test-add"
+Adding test "fp-test-sub"
+Adding test "fp-test-mul"
+Adding test "fp-test-div"
+Adding test "fp-test-rem"
+Adding test "fp-test-sqrt"
+Adding test "fp-test-mulAdd"
+Adding test "fp-test-log2"
+Adding test "check-block-qdict"
+Adding test "check-qdict"
+Adding test "check-qnum"
+Adding test "check-qstring"
+Adding test "check-qlist"
+Adding test "check-qnull"
+Adding test "check-qobject"
+Adding test "check-qjson"
+Adding test "check-qlit"
+Adding test "test-qobject-output-visitor"
+Adding test "test-clone-visitor"
+Adding test "test-qobject-input-visitor"
+Adding test "test-forward-visitor"
+Adding test "test-string-input-visitor"
+Adding test "test-string-output-visitor"
+Adding test "test-opts-visitor"
+Adding test "test-visitor-serialization"
+Adding test "test-bitmap"
+Adding test "test-x86-cpuid"
+Adding test "test-cutils"
+Adding test "test-shift128"
+Adding test "test-mul64"
+Adding test "test-int128"
+Adding test "rcutorture"
+Adding test "test-rcu-list"
+Adding test "test-rcu-simpleq"
+Adding test "test-rcu-tailq"
+Adding test "test-rcu-slist"
+Adding test "test-qdist"
+Adding test "test-qht"
+Adding test "test-bitops"
+Adding test "test-bitcnt"
+Adding test "test-qgraph"
+Adding test "check-qom-interface"
+Adding test "check-qom-proplist"
+Adding test "test-qemu-opts"
+Adding test "test-keyval"
+Adding test "test-logging"
+Adding test "test-uuid"
+Adding test "ptimer-test"
+Adding test "test-qapi-util"
+Adding test "test-qmp-event"
+Adding test "test-coroutine"
+Adding test "test-aio"
+Adding test "test-aio-multithread"
+Adding test "test-throttle"
+Adding test "test-thread-pool"
+Adding test "test-hbitmap"
+Adding test "test-bdrv-drain"
+Adding test "test-bdrv-graph-mod"
+Adding test "test-blockjob"
+Adding test "test-blockjob-txn"
+Adding test "test-block-backend"
+Adding test "test-block-iothread"
+Adding test "test-write-threshold"
+Adding test "test-crypto-hash"
+Adding test "test-crypto-hmac"
+Adding test "test-crypto-cipher"
+Adding test "test-crypto-secret"
+Adding test "test-authz-simple"
+Adding test "test-authz-list"
+Adding test "test-authz-listfile"
+Adding test "test-io-task"
+Adding test "test-io-channel-socket"
+Adding test "test-io-channel-file"
+Adding test "test-io-channel-command"
+Adding test "test-io-channel-buffer"
+Adding test "test-crypto-ivgen"
+Adding test "test-crypto-afsplit"
+Adding test "test-crypto-block"
+Adding test "test-crypto-tlscredsx509"
+Adding test "test-crypto-tlssession"
+Adding test "test-io-channel-tls"
+Adding test "test-authz-pam"
+Adding test "test-image-locking"
+Adding test "test-replication"
+Adding test "test-crypto-pbkdf"
+Adding test "test-iov"
+Adding test "test-qmp-cmds"
+Adding test "test-xbzrle"
+Adding test "test-timed-average"
+Adding test "test-util-sockets"
+Adding test "test-base64"
+Adding test "test-bufferiszero"
+Adding test "test-vmstate"
+Adding test "test-yank"
+Adding test "test-char"
+Adding test "test-qdev-global-props"
+Adding test "QAPI schema regression tests"
+Program diff found: YES
+Program dbus-daemon found: YES
+Adding test "qtest-mips/endianness-test"
+Adding test "qtest-mips/display-vga-test"
+Adding test "qtest-mips/fuzz-megasas-test"
+Adding test "qtest-mips/fuzz-virtio-scsi-test"
+Adding test "qtest-mips/fuzz-sb16-test"
+Adding test "qtest-mips/fuzz-sdcard-test"
+Adding test "qtest-mips/cdrom-test"
+Adding test "qtest-mips/device-introspect-test"
+Adding test "qtest-mips/machine-none-test"
+Adding test "qtest-mips/qmp-test"
+Adding test "qtest-mips/qmp-cmd-test"
+Adding test "qtest-mips/qom-test"
+Adding test "qtest-mips/test-hmp"
+Adding test "qtest-mips/qos-test"
+Program initrd-stress.sh found: YES
+Build targets in project: 400
+
+qemu 6.1.0
+
+  Directories
+                   Install prefix: /usr/local
+                   BIOS directory: share/qemu
+                    firmware path: /usr/local/share/qemu-firmware
+                 binary directory: bin
+                library directory: lib
+                 module directory: lib/qemu
+                libexec directory: libexec
+                include directory: include
+                 config directory: /usr/local/etc
+            local state directory: /usr/local/var
+                 Manual directory: share/man
+                    Doc directory: /usr/local/share/doc
+                  Build directory: /Users/lihaoran/siemensSec/qemu/build
+                      Source path: /Users/lihaoran/siemensSec/qemu
+                   GIT submodules: ui/keycodemapdb meson tests/fp/berkeley-testfloat-3 tests/fp/berkeley-softfloat-3 dtc capstone slirp
+
+  Host binaries
+                              git: git
+                             make: make
+                           python: /Library/Developer/CommandLineTools/usr/bin/python3 (version: 3.9)
+                     sphinx-build: NO
+                              gdb: /usr/local/bin/gdb
+                      genisoimage: 
+                             smbd: "/usr/sbin/smbd"
+
+  Configurable features
+                    Documentation: NO
+            system-mode emulation: YES
+              user-mode emulation: NO
+                      block layer: YES
+                    Install blobs: YES
+                   module support: NO
+                  fuzzing support: NO
+                    Audio drivers: coreaudio sdl
+                   Trace backends: log
+                    QOM debugging: YES
+             vhost-kernel support: NO
+                vhost-net support: NO
+             vhost-crypto support: NO
+               vhost-scsi support: NO
+              vhost-vsock support: NO
+               vhost-user support: NO
+    vhost-user-blk server support: NO
+            vhost-user-fs support: NO
+               vhost-vdpa support: NO
+                build guest agent: YES
+
+  Compilation
+                         host CPU: x86_64
+                  host endianness: little
+                       C compiler: cc
+                  Host C compiler: cc
+                     C++ compiler: c++
+             Objective-C compiler: clang
+                           CFLAGS: -O2 -g
+                         CXXFLAGS: -O2 -g
+                      QEMU_CFLAGS: -m64 -mcx16 -DOS_OBJECT_USE_OBJC=0 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -D_LARGEFILE_SOURCE -Wstrict-prototypes -Wredundant-decls -Wundef -Wwrite-strings -Wmissing-prototypes -fno-strict-aliasing -fno-common -fwrapv  -Wold-style-definition -Wtype-limits -Wformat-security -Wformat-y2k -Winit-self -Wignored-qualifiers -Wempty-body -Wnested-externs -Wendif-labels -Wexpansion-to-defined -Wno-initializer-overrides -Wno-missing-include-dirs -Wno-shift-negative-value -Wno-string-plus-int -Wno-typedef-redefinition -Wno-tautological-type-limit-compare -Wno-psabi -fstack-protector-strong
+                     QEMU_LDFLAGS: -m64  -fstack-protector-strong
+                         profiler: NO
+     link-time optimization (LTO): NO
+                              PIE: NO
+                     static build: NO
+              malloc trim support: NO
+                       membarrier: NO
+                debug stack usage: NO
+                  mutex debugging: NO
+                 memory allocator: system
+                avx2 optimization: NO
+             avx512f optimization: NO
+                    gprof enabled: NO
+                             gcov: NO
+                 thread sanitizer: NO
+                      CFI support: NO
+                   strip binaries: YES
+                           sparse: NO
+                  mingw32 support: NO
+
+  Targets and accelerators
+                      KVM support: NO
+                      HAX support: NO
+                      HVF support: NO
+                     WHPX support: NO
+                     NVMM support: NO
+                      Xen support: NO
+                      TCG support: YES
+                      TCG backend: native (x86_64)
+                      TCG plugins: YES
+                TCG debug enabled: NO
+                      target list: mips-softmmu
+                  default devices: YES
+         out of process emulation: NO
+
+  Block layer support
+                coroutine backend: sigaltstack
+                   coroutine pool: YES
+             Block whitelist (rw): 
+             Block whitelist (ro): 
+     Use block whitelist in tools: NO
+                   VirtFS support: NO
+            build virtiofs daemon: NO
+             Live block migration: YES
+              replication support: YES
+                    bochs support: YES
+                    cloop support: YES
+                      dmg support: YES
+                  qcow v1 support: YES
+                      vdi support: YES
+                    vvfat support: YES
+                      qed support: YES
+                parallels support: YES
+                     FUSE exports: NO
+
+  Crypto
+                     TLS priority: "NORMAL"
+                   GNUTLS support: YES
+                    GNUTLS crypto: NO
+                        libgcrypt: YES
+                           nettle: NO
+                     crypto afalg: NO
+                         rng-none: NO
+                    Linux keyring: NO
+
+  Dependencies
+                    Cocoa support: YES
+                      SDL support: NO
+                SDL image support: NO
+                      GTK support: NO
+                           pixman: YES
+                      VTE support: NO
+                    slirp support: internal
+                         libtasn1: YES
+                              PAM: YES
+                    iconv support: YES
+                   curses support: YES
+                    virgl support: NO
+                     curl support: YES
+                Multipath support: NO
+                      VNC support: YES
+                 VNC SASL support: YES
+                 VNC JPEG support: YES
+                  VNC PNG support: YES
+                   brlapi support: NO
+                      vde support: NO
+                   netmap support: NO
+                Linux AIO support: NO
+           Linux io_uring support: NO
+               ATTR/XATTR support: NO
+                     RDMA support: NO
+                   PVRDMA support: NO
+                      fdt support: system
+                libcap-ng support: NO
+                      bpf support: NO
+                    spice support: NO
+                      rbd support: NO
+                   xfsctl support: NO
+                smartcard support: NO
+                      U2F support: NO
+                           libusb: YES
+                    usb net redir: NO
+                   OpenGL support: NO
+                              GBM: NO
+                 libiscsi support: NO
+                   libnfs support: NO
+                  seccomp support: NO
+                GlusterFS support: NO
+                      TPM support: YES
+                   libssh support: YES
+                      lzo support: YES
+                   snappy support: YES
+                    bzip2 support: YES
+                    lzfse support: NO
+                     zstd support: YES
+                NUMA host support: NO
+                          libxml2: YES
+                         capstone: system
+                  libpmem support: NO
+                libdaxctl support: NO
+                          libudev: NO
+                       FUSE lseek: NO
+
+Found ninja-1.11.1 at /usr/local/bin/ninja
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1or6573a
+Command line:  cc /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1or6573a/testfile.c -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp1or6573a/output.obj -pipe -c -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ programs: =/Library/Developer/CommandLineTools/usr/bin
+libraries: =/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0
+
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /var/folders/94/dmqtcz5941ncxfdfdjqn4bg80000gn/T/tmpyfuog9jw
+Command line:  c++ /var/folders/94/dmqtcz5941ncxfdfdjqn4bg80000gn/T/tmpyfuog9jw/testfile.cpp -o /var/folders/94/dmqtcz5941ncxfdfdjqn4bg80000gn/T/tmpyfuog9jw/output.obj -pipe -c -std=gnu++11 
+
+Code:
+ int i = static_cast<int>(0);
+Compiler stdout:
+ 
+Compiler stderr:
+ 
+Compiler accepts -std=gnu++11: YES
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpnzcels5m
+Command line:  clang /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpnzcels5m/testfile.m -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmpnzcels5m/output.obj -pipe -c -O0 --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ programs: =/Library/Developer/CommandLineTools/usr/bin
+libraries: =/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0
+
+Compiler stderr:
+ 
+Running compile:
+Working directory:  /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp0kc6e8yo
+Command line:  c++ /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp0kc6e8yo/testfile.cpp -o /Users/lihaoran/siemensSec/qemu/build/meson-private/tmp0kc6e8yo/output.obj -pipe -c -O0 -fpermissive --print-search-dirs 
+
+Code:
+ 
+Compiler stdout:
+ programs: =/Library/Developer/CommandLineTools/usr/bin
+libraries: =/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0
+
+Compiler stderr:
+ 

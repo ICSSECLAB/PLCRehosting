@@ -1,0 +1,14 @@
+LATEST/LQSPI_XIP/board-versal-pmc-virt.dts.i: board-versal-pmc-virt.dts \
+  versal-npi-memmap.dtsh versal.dtsh include/utils.dtsh \
+  include/loader.dtsh versal-irqs.dtsh versal-ps-irqs.dtsh \
+  versal-memmap.dtsh versal-top-memmap.dtsh versal-fpd-memmap.dtsh \
+  versal-lpd-memmap.dtsh versal-xram-memmap.dtsh versal-pmc-memmap.dtsh \
+  versal-iou-memmap.dtsh versal-psm-memmap.dtsh versal-gic-memmap.dtsh \
+  versal-cpm-memmap.dtsh versal-resetmap.dtsh versal-powermap.dtsh \
+  versal-wiremap.dtsh versal-smid.dtsh versal-pmc.dtsi versal-icnt.dtsi \
+  include/smmuv2.dtsh include/interconnect.dtsh versal-ps-irq-map.dtsh \
+  versal-rams.dtsi versal-pmc-ppu.dtsi versal-pmc-iou.dtsi \
+  versal-pmc-sys.dtsi versal-pmc-sec.dtsi versal-pmc-npi.dtsi \
+  versal-pmc-pl.dtsi versal-pmc-bat.dtsi versal-psm.dtsi \
+  versal-ddrmc.dtsi versal-ps-iou.dtsi versal-pmc-ppu-cpus.dtsi \
+  include/versal/ppu.dtsh versal-psm-cpu.dtsi

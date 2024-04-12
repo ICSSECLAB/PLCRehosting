@@ -1,0 +1,21 @@
+LATEST/LQSPI_XIP/board-versal-xcvc2602-ps-cosim-vitis-virt.dts.i: \
+  board-versal-xcvc2602-ps-cosim-vitis-virt.dts \
+  board-versal-xcvc2602-ps-virt.dts board-versal-xcvc2802-ps-virt.dts \
+  include/versal/memmap/versal-xcvc2802-npi-memmap.dtsi \
+  versal-cpm5-memmap.dtsh board-versal-ps-virt.dts versal.dtsh \
+  include/utils.dtsh include/loader.dtsh versal-irqs.dtsh \
+  versal-ps-irqs.dtsh versal-memmap.dtsh versal-top-memmap.dtsh \
+  versal-fpd-memmap.dtsh versal-lpd-memmap.dtsh versal-xram-memmap.dtsh \
+  versal-pmc-memmap.dtsh versal-iou-memmap.dtsh versal-psm-memmap.dtsh \
+  versal-gic-memmap.dtsh versal-cpm-memmap.dtsh versal-resetmap.dtsh \
+  versal-powermap.dtsh versal-wiremap.dtsh versal-smid.dtsh \
+  versal-pmc.dtsi versal-icnt.dtsi include/smmuv2.dtsh \
+  include/interconnect.dtsh versal-ps-irq-map.dtsh versal-rams.dtsi \
+  versal-pmc-ppu.dtsi versal-pmc-iou.dtsi versal-pmc-sys.dtsi \
+  versal-pmc-sec.dtsi versal-pmc-npi.dtsi versal-pmc-pl.dtsi \
+  versal-pmc-bat.dtsi versal-psm.dtsi versal-ddrmc.dtsi \
+  versal-ps-apu.dtsi include/versal/apu.dtsh versal-ps-rpu.dtsi \
+  include/versal/rpu.dtsh versal-boot-init.dtsi versal-ps-iou.dtsi \
+  versal-virtio-mmio.dtsi versal-gty.dtsi versal-gty-npi.dtsi \
+  versal-silicon-freq.dtsi versal-cpm5.dtsi versal-vdu.dtsi \
+  versal-ps-pl-remoteport.dtsi versal-vitis.dtsi

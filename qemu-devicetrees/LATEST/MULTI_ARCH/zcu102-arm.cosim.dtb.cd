@@ -1,0 +1,7 @@
+LATEST/MULTI_ARCH/zcu102-arm.cosim.dts.i: zcu102-arm.cosim.dts \
+  zcu102-arm.dts board-zynqmp-zcu102.dts zynqmp.dtsh include/utils.dtsh \
+  include/loader.dtsh zynqmp-irqs.dtsh zynqmp-memmap.dtsh \
+  zynqmp-arm.dtsi zynqmp-irq-map.dtsh zynqmp-pmu-dev.dtsi \
+  zynqmp-iou.dtsi zynqmp-icnt.dtsi zynqmp-csu.dtsi \
+  zynqmp-memory-regions.dtsi zynqmp-boot-init.dtsi \
+  zynqmp-pl-remoteport.dtsi

@@ -1,0 +1,1 @@
+/Users/lihaoran/siemensSec/qemu/.gdbinit

@@ -1,0 +1,4 @@
+LATEST/SINGLE_ARCH/zynqmp-pmu.dts.i: zynqmp-pmu.dts zynqmp.dtsh \
+  include/utils.dtsh include/loader.dtsh zynqmp-irqs.dtsh \
+  zynqmp-memmap.dtsh zynqmp-memory-regions.dtsi zynqmp-pmu-dev.dtsi \
+  zynqmp-iou.dtsi zynqmp-icnt.dtsi zynqmp-csu.dtsi
